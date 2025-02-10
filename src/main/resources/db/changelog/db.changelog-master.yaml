@@ -1,4 +1,5 @@
 databaseChangeLog:
-  - changeSet:
-      id: 1
-      author: sushkova
+  - include:
+      file: db/changelog/schema/000-create-schema.yaml
+  - include:
+      file: db/changelog/schema/001-create-athlete-table.yaml
